@@ -44,4 +44,12 @@ scatter.smooth(x=state_data$Area, y=state_data$Murder,
                main="Correlation of Area  ~Murder",
                xlab="Area",
                ylab="Murder%")
+cor(state_data)
+paste("Correlation for murder and forst:",round(cor(state_data$Murder,state_data$Frost),2))
+paste("Correlation for murder and population:",round(cor(state_data$Murder,state_data$Population),2))
+paste("Correlation for murder and income:",round(cor(state_data$Murder,state_data$Income),2))
+paste("Correlation for murder and illiteracy:",round(cor(state_data$Murder,state_data$Illiteracy),2))
+paste("Correlation for murder and life_exp:",round(cor(state_data$Murder,state_data$Life_Exp),2))
+paste("Correlation for murder and hs_grad:",round(cor(state_data$Murder,state_data$HS_Grad),2))
+paste("Correlation for murder and area:",round(cor(state_data$Murder,state_data$Area),2))
 
